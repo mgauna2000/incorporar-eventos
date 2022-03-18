@@ -1,12 +1,13 @@
-let form = document.getElementById("formulario");
-let inputNombre = document.getElementById("nombre"); //INPUT
-let inputApellidos = document.getElementById("apellidos"); //INPUT apellidos
+let form = document.getElementById("form");
+let inputName = document.getElementById("name"); 
+let inputEmail = document.getElementById("email"); 
+let inputPassword = document.getElementById("password")
 
 const textoNombre = document.getElementById("textoNombre"); //P
 
-form.addEventListener("submit", enviarFomulario);
+form.addEventListener("submit", enviarFormulario);
 
-const enviaFormulario = (e) => {
+function enviarFormulario(e) {
     e.preventDefault();
-    console.log(`La persona se llama ${inputNombre.value} ${inputApellidos.value}`);
+    console.log("Formulario Enviado");
 }

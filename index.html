@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,23 @@
     <title>incorporar eventos</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <form id="formulario">
-    <img src="img/usuario.png" alt="" class="logo">
-        <div>
-            <input type="text" autocomplete="off" id="name" placeholder="nombre">
-            <input type="email" autocomplete="off" id="email" placeholder="email">
-            <input type="password" autocomplete="off" id="password" placeholder="contraseña">
-            <input type="checkbox" checked id="terms-and-cond" class="checkbox">
-            <label for="terms-and-cond">acepto los <a href="">terminos y condiciones</a></label>
-            <br>
-            <input type="checkbox" id="notification" class="checkbox">
-            <label for="notification">recibir correos de próximas ofertas y eventos</label>
-            <input type="submit" class="submit-btn" value="Ingresar">
-        </div>
-        <p id="textoNombre"></p>
-    </div>
+    <form id="form">
+        <img src="img/usuario.png" alt="" class="logo">
+        <input type="text" autocomplete="off" id="name" placeholder="nombre">
+        <input type="email" autocomplete="off" id="email" placeholder="email">
+        <input type="password" autocomplete="off" id="password" placeholder="contraseña">
+        <input type="checkbox" checked id="terms-and-cond" class="checkbox">
+        <label for="terms-and-cond">acepto los <a href="">terminos y condiciones</a></label>
+        <br>
+        <input type="checkbox" id="notification" class="checkbox">
+        <label for="notification">recibir correos de próximas ofertas y eventos</label>
+        <input type="submit" class="submit-btn" value="Ingresar">
     </form>
+    <p id="textoNombre"></p>
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>
