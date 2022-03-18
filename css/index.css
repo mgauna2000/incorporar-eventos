@@ -25,6 +25,10 @@ body {
     display: block;
     margin: 0 auto 50px;
 }
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
 input[type="text"],
 input[type="password"],
 input[type="email"] {
