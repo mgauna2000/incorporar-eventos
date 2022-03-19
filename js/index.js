@@ -14,9 +14,12 @@ const register = () => {
     inputName.value == "" ||
     inputLastName.value == "" ||
     inputEmail.value == "" ||
-    inputPassword.value == ""
+    inputPassword.value == "" ||
+    inputCheck.checked == false
   ) {
-    alert("Ingrese correctamente los datos");
+    alert(
+      "Ingrese correctamente los datos y acepte los terminos y condiciones!"
+    );
   } else {
     dataForm.push({
       nombre: inputName.value,
