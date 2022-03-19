@@ -16,6 +16,9 @@ const register = () => {
         dataForm.push(inputName.value, inputLastName.value, inputEmail.value, inputPassword.value)
         console.log(dataForm);
 
+        localStorage.setItem(inputName.value, inputLastName.value, inputEmail.value, inputPassword.value);
+        console.log(localStorage);
+
         inputLastName.value = ""
         inputLastName = ""
         inputEmail = ""
