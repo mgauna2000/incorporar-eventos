@@ -12,14 +12,6 @@ body {
     background: #f5f5f5;
     font-family: 'reboto', sans-serif;
 }
-.loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    display: none;
-}
 .logo {
     height: 80px;
     display: block;

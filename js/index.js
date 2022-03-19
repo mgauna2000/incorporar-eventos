@@ -4,13 +4,25 @@ let inputLastName = document.getElementById("lastName");
 let inputEmail = document.getElementById("email"); 
 let inputPassword = document.getElementById("password");
 let inputCheck = document.getElementById("terms-and-cond");
-let inputNotification = document.getElementById("notification")
+let inputNotification = document.getElementById("notification");
+let btn = document.getElementById("btn");
 
-const textoNombre = document.getElementById("textoNombre"); //P
+let dataForm = [];
 
-form.addEventListener("submit", sendForm);
+const register = () => {
+    if (inputName.value == "" || inputLastName.value == "" || inputEmail.value == "" || inputPassword.value == "") {
+        alert("Ingrese correctamente los datos");
+    }else{
+        dataForm.push(inputName.value, inputLastName.value, inputEmail.value, inputPassword.value)
+        console.log(dataForm);
 
-function sendForm(e) {
-    e.preventDefault();
-    console.log("Submitted form");
+        inputLastName.value = ""
+        inputLastName = ""
+        inputEmail = ""
+
+
+        alert("Registrado")
+    }
 }
+
+btn.addEventListener("click", register);

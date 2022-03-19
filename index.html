@@ -10,20 +10,20 @@
 </head>
 
 <body>
-    <form id="form">
+    <div class="container">
         <img src="img/usuario.png" alt="" class="logo">
         <h1>Nuevo Usuario</h1>
-        <input type="text" autocomplete="off" id="name" placeholder="nombre">
-        <input type="text" autocomplete="off" id="lastName" placeholder="apellido">
-        <input type="email" autocomplete="off" id="email" placeholder="email">
-        <input type="password" autocomplete="off" id="password" placeholder="contraseña">
-        <input type="checkbox" checked id="terms-and-cond" class="checkbox">
+        <input type="text" name="name" autocomplete="off" id="name" placeholder="nombre">
+        <input type="text" name="lastName" autocomplete="off" id="lastName" placeholder="apellido">
+        <input type="email" name="email" autocomplete="off" id="email" placeholder="email">
+        <input type="password" name="password" autocomplete="off" id="password" placeholder="contraseña">
+        <input type="checkbox" name="terms-and-cond" checked id="terms-and-cond" class="checkbox">
         <label for="terms-and-cond">acepto los <a href="">terminos y condiciones</a></label>
         <br>
-        <input type="checkbox" id="notification" class="checkbox">
+        <input type="checkbox" name="notification" id="notification" class="checkbox">
         <label for="notification">recibir correos de próximas ofertas y eventos</label>
-        <input type="submit" class="submit-btn" value="Registrarse">
-    </form>
+        <button id="btn" class="submit-btn">Registrarse</button>
+    </div>
 
     <script src="js/index.js"></script>
 </body>
