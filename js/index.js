@@ -30,9 +30,10 @@ const register = () => {
     localStorage.setItem("usuario", becomeJSON);
     console.log(localStorage);
 
+    inputName.value = "";
     inputLastName.value = "";
-    inputLastName = "";
-    inputEmail = "";
+    inputEmail.value = "";
+    inputPassword.value = "";
 
     alert("Registrado!");
   }
