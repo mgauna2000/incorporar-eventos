@@ -4,6 +4,9 @@ let inputLastName = document.getElementById("lastName");
 let inputEmail = document.getElementById("email");
 let inputPassword = document.getElementById("password");
 let inputCheck = document.getElementById("terms-and-cond");
+//ya da igual si elije o no las notificaciones asi que no le hago 
+//un if si acepta que le lleguen las notis, solo lo pongo para sastififacer 
+//al tutor que queda mejor el estilo del register jaja 
 let inputNotification = document.getElementById("notification");
 let btn = document.getElementById("btn");
 
