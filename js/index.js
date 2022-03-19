@@ -1,7 +1,7 @@
 let form = document.getElementById("form");
-let inputName = document.getElementById("name"); 
-let inputLastName = document.getElementById("lastName"); 
-let inputEmail = document.getElementById("email"); 
+let inputName = document.getElementById("name");
+let inputLastName = document.getElementById("lastName");
+let inputEmail = document.getElementById("email");
 let inputPassword = document.getElementById("password");
 let inputCheck = document.getElementById("terms-and-cond");
 let inputNotification = document.getElementById("notification");
@@ -10,22 +10,32 @@ let btn = document.getElementById("btn");
 let dataForm = [];
 
 const register = () => {
-    if (inputName.value == "" || inputLastName.value == "" || inputEmail.value == "" || inputPassword.value == "") {
-        alert("Ingrese correctamente los datos");
-    }else{
-        dataForm.push(inputName.value, inputLastName.value, inputEmail.value, inputPassword.value)
-        console.log(dataForm);
+  if (
+    inputName.value == "" ||
+    inputLastName.value == "" ||
+    inputEmail.value == "" ||
+    inputPassword.value == ""
+  ) {
+    alert("Ingrese correctamente los datos");
+  } else {
+    dataForm.push({
+      nombre: inputName.value,
+      apellido: inputLastName.value,
+      email: inputEmail.value,
+      password: inputPassword.value,
+    });
+    console.log(dataForm);
 
-        localStorage.setItem(inputName.value, inputLastName.value, inputEmail.value, inputPassword.value);
-        console.log(localStorage);
+    const becomeJSON = JSON.stringify(dataForm);
+    localStorage.setItem("usuario", becomeJSON);
+    console.log(localStorage);
 
-        inputLastName.value = ""
-        inputLastName = ""
-        inputEmail = ""
+    inputLastName.value = "";
+    inputLastName = "";
+    inputEmail = "";
 
-
-        alert("Registrado")
-    }
-}
+    alert("Registrado!");
+  }
+};
 
 btn.addEventListener("click", register);
